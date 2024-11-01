@@ -43,8 +43,8 @@ public class Robot extends TimedRobot {
   public void robotPeriodic() {
 
     // Set the motor output to the joystick input (There will be stick drift)
-    motorLeftFront.set(joystickLeft.getY());
-    motorLeftBack.set(-joystickRight.getY());
+    motorLeftFront.set(-joystickLeft.getY());
+    motorRightFront.set(joystickRight.getY());
 
   }
 
