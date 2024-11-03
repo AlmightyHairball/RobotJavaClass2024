@@ -1,3 +1,5 @@
+package frc.robot.PartTwo;
+
 // Use blueprint analogy to differentiate between instance and class
 public class Pencil {
     // Attributes (describe as properties of an object). Shouldn't take too long
