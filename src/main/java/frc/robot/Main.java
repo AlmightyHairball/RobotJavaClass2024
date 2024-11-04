@@ -4,8 +4,10 @@
 
 package frc.robot;
 
+import frc.robot.PartOne.Workspace;
+
 //RobotBase.startRobot(Robot::new); insert in main when ready to run robot
-import edu.wpi.first.wpilibj.RobotBase;
+//import edu.wpi.first.wpilibj.RobotBase;
 
 public final class Main {
   private Main() {}
@@ -13,6 +15,7 @@ public final class Main {
 
   public static void main(String... args) {
     //RobotBase.startRobot(Robot::new);
+    Workspace.main();
   }
 
 }
