@@ -5,6 +5,8 @@
 package frc.robot;
 
 import frc.robot.PartOne.Workspace;
+// Ignore unresolved errors, will be fixed when students create the spaceship class
+import frc.robot.PartTwo.Spaceship;
 
 //RobotBase.startRobot(Robot::new); insert in main when ready to run robot
 //import edu.wpi.first.wpilibj.RobotBase;
@@ -15,7 +17,8 @@ public final class Main {
 
   public static void main(String... args) {
     //RobotBase.startRobot(Robot::new);
-    Workspace.main();
+    //Workspace.main();
+    Spaceship.main();
   }
 
 }

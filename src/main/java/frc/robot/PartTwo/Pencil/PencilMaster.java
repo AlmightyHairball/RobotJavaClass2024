@@ -1,7 +1,7 @@
-package frc.robot.PartTwo;
+package frc.robot.PartTwo.Pencil;
 
 // Use blueprint analogy to differentiate between instance and class
-public class Pencil {
+public class PencilMaster {
     // Attributes (describe as properties of an object). Shouldn't take too long
     // When assigning the attributes, make sure to alter the "blueprint" analogy to accommodate changes in separate instances.
     String color;
@@ -12,7 +12,7 @@ public class Pencil {
     // Constructor (leave blank at first and assign properties directly for simplicity and explain methods first)
     // After explaining methods, explain constructor as a way to create an object with defaults
     // Emphasize the combination of type and name into one keyword
-    public Pencil(String col, String t, double len) {
+    public PencilMaster(String col, String t, double len) {
         color = col;
         type = t;
         length = len;
@@ -37,8 +37,8 @@ public class Pencil {
     }
     
     // Describe the main method within the context of the class structure. Do not spend too much time on it.
-    public static void main (String[] args) {
-        Pencil myPencil = new Pencil("Yellow", "No. 2", 6);
+    public static void main () {
+        PencilMaster myPencil = new PencilMaster("Yellow", "No. 2", 6);
         myPencil.Write("Testing");
         myPencil.Sharpen();
         myPencil.Write("Testing Again");
@@ -47,7 +47,7 @@ public class Pencil {
         myPencil.Sharpen();
 
         // Second pencil to show separation of two instances.
-        Pencil myPencil2 = new Pencil("Black", "No. 2", 7);
+        PencilMaster myPencil2 = new PencilMaster("Black", "No. 2", 7);
         myPencil2.Write("This is the second pencil");
         myPencil2.Write("The second pencil should not work.");
         myPencil.Write("But the first one still does");
